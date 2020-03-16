@@ -1,0 +1,27 @@
+//Libraries
+#include <stdio.h>
+#include <stdlib.h>
+// int main function
+int main()
+{
+    // Decleration the variable
+    int n = 0 , sum = 0 ;
+    // get the size of aray from the user
+    printf(" Please enter the size of you array:   ");
+    scanf("%d", &n);
+    // Decleration the array with n value
+    int ar[n];
+    // for loop to get from the user the numbers and Add it to sum
+    printf(" Please enter your numbers :   \n");
+    for ( int i = 0 ; i < n ; i++)
+    {
+        scanf("%d", &ar[i]);
+        sum += ar[i];
+    }
+    // print the sum
+    printf("----------------------------\n");
+    printf("Your sum is :  %d", sum);
+    printf("----------------------------\n");
+
+    return 0 ;
+}
